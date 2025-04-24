@@ -57,7 +57,7 @@ Para alterar o esquema de cores, modifique as variáveis CSS no início do arqui
     --light-color: #f8f9fa;
 }
 ```
-## Dados
+## 🎲 Dados
 Gráfico de Receita: Modifique o array data em revenueChart
 
 Gráfico de Vendas: Ajuste os valores em salesChart
