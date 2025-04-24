@@ -36,7 +36,7 @@ Um dashboard executivo moderno e responsivo, projetado para impressionar CEOs e 
 > 🔗 [Ver Dashboard Online](https://pablog-7.github.io/executive-insight-dashboard/)
 
 ### Opção 2: Execução Local
-
+```bash
 1. Clone o repositório:
 git clone https://github.com/pablog-7/executive-insight-dashboard.git
 
