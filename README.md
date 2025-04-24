@@ -45,6 +45,7 @@ cd executive-insight-dashboard
 
 3. Abra o arquivo index.html no seu navegador preferido.
 
+```bash
 🎨 Personalização
 Cores
 Para alterar o esquema de cores, modifique as variáveis CSS no início do arquivo de estilo:
@@ -55,15 +56,15 @@ Para alterar o esquema de cores, modifique as variáveis CSS no início do arqui
     --dark-color: #2b2d42;
     --light-color: #f8f9fa;
 }
-
-Dados
+```
+## Dados
 Gráfico de Receita: Modifique o array data em revenueChart
 
 Gráfico de Vendas: Ajuste os valores em salesChart
 
 Métricas: Atualize os valores nos cards HTML ou no intervalo de atualização automática
 
-📱 Responsividade
+## 📱 Responsividade
 O projeto foi cuidadosamente projetado para funcionar em:
 
 Desktop: Layout com sidebar e conteúdo principal
@@ -72,7 +73,7 @@ Tablet: Reorganização dos elementos gráficos
 
 Mobile: Menu inferior e disposição vertical dos componentes
 
-📌 Melhorias Futuras
+## 📌 Melhorias Futuras
 Integração com APIs reais de dados
 
 Sistema de autenticação para múltiplos usuários
@@ -83,7 +84,7 @@ Modo escuro/claro
 
 Painel de configurações personalizáveis
 
-🤝 Contribuição
+## 🤝 Contribuição
 Contribuições são bem-vindas! Siga estes passos:
 
 1. Faça um fork do projeto
@@ -99,5 +100,5 @@ git push origin feature/NovaFuncionalidade
 
 5. Abra um Pull Request
 
-📄 Licença
+## 📄 Licença
 Distribuído sob a licença MIT.
