@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Insight | Dashboard de Performance</title>
+    <!-- Fontes do Google -->
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar de Navegação -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>Executive Insight</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Negócios</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        <span>Clientes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Relatórios</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Configurações</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-title">
+                    <h2>Bem-vindo de volta, CEO</h2>
+                    <p>Resumo de desempenho e métricas-chave</p>
+                </div>
+                <div class="user-profile">
+                    <div class="user-info">
+                        <h4>John CEO</h4>
+                        <p>Administrador</p>
+                    </div>
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="user-avatar">
+                </div>
+            </header>
+
+            <!-- Grid de Métricas -->
+            <section class="metrics-grid">
+                <div class="metric-card revenue">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-title">Receita Total</div>
+                            <div class="metric-value">R$ 284,245</div>
+                            <div class="metric-change positive">
+                                <i class="fas fa-arrow-up"></i> 12% vs último mês
+                            </div>
+                        </div>
+                        <div class="metric-icon revenue">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card customers">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-title">Novos Clientes</div>
+                            <div class="metric-value">1,245</div>
+                            <div class="metric-change positive">
+                                <i class="fas fa-arrow-up"></i> 18% vs último mês
+                            </div>
+                        </div>
+                        <div class="metric-icon customers">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card orders">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-title">Pedidos</div>
+                            <div class="metric-value">356</div>
+                            <div class="metric-change negative">
+                                <i class="fas fa-arrow-down"></i> 3% vs último mês
+                            </div>
+                        </div>
+                        <div class="metric-icon orders">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card profit">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-title">Lucro</div>
+                            <div class="metric-value">R$ 45,298</div>
+                            <div class="metric-change positive">
+                                <i class="fas fa-arrow-up"></i> 8% vs último mês
+                            </div>
+                        </div>
+                        <div class="metric-icon profit">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráficos -->
+            <section class="charts-grid">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Desempenho de Receita</h3>
+                        <div class="chart-actions">
+                            <button class="chart-btn active">Mensal</button>
+                            <button class="chart-btn">Trimestral</button>
+                            <button class="chart-btn">Anual</button>
+                        </div>
+                    </div>
+                    <div class="chart" id="revenueChart">
+                        <!-- Gráfico será renderizado aqui via JavaScript -->
+                        <canvas id="revenueCanvas"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Distribuição de Vendas</h3>
+                        <div class="chart-actions">
+                            <button class="chart-btn active">2023</button>
+                            <button class="chart-btn">2022</button>
+                        </div>
+                    </div>
+                    <div class="chart" id="salesChart">
+                        <!-- Gráfico será renderizado aqui via JavaScript -->
+                        <canvas id="salesCanvas"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dados Recentes -->
+            <section class="recent-data">
+                <div class="chart-header">
+                    <h3 class="chart-title">Transações Recentes</h3>
+                    <button class="chart-btn">Ver Tudo</button>
+                </div>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID Transação</th>
+                                <th>Cliente</th>
+                                <th>Data</th>
+                                <th>Valor</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#TRX-78945</td>
+                                <td>Amazon Inc.</td>
+                                <td>15 Jun 2023</td>
+                                <td>R$ 12,450</td>
+                                <td><span class="status completed">Completo</span></td>
+                            </tr>
+                            <tr>
+                                <td>#TRX-78944</td>
+                                <td>Microsoft Corp.</td>
+                                <td>14 Jun 2023</td>
+                                <td>R$ 8,750</td>
+                                <td><span class="status completed">Completo</span></td>
+                            </tr>
+                            <tr>
+                                <td>#TRX-78943</td>
+                                <td>Google LLC</td>
+                                <td>13 Jun 2023</td>
+                                <td>R$ 15,200</td>
+                                <td><span class="status pending">Pendente</span></td>
+                            </tr>
+                            <tr>
+                                <td>#TRX-78942</td>
+                                <td>Apple Inc.</td>
+                                <td>12 Jun 2023</td>
+                                <td>R$ 9,850</td>
+                                <td><span class="status completed">Completo</span></td>
+                            </tr>
+                            <tr>
+                                <td>#TRX-78941</td>
+                                <td>Tesla Motors</td>
+                                <td>11 Jun 2023</td>
+                                <td>R$ 7,300</td>
+                                <td><span class="status canceled">Cancelado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
