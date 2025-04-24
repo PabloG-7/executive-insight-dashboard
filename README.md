@@ -1,6 +1,6 @@
 # 📊 Executive Insight Dashboard
 
-![Project Preview](./assets/dashboard-preview.png) <!-- Substitua pelo caminho real da imagem -->
+![Project Preview](./dashboard-preview.png) <!-- Substitua pelo caminho real da imagem -->
 
 Um dashboard executivo moderno e responsivo, projetado para impressionar CEOs e gestores com visualizações de dados claras e impactantes.
 
