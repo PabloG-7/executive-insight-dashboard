@@ -38,11 +38,11 @@ Um dashboard executivo moderno e responsivo, projetado para impressionar CEOs e 
 ### Opção 2: Execução Local
 
 1. Clone o repositório:
-
 ```bash
 git clone https://github.com/pablog-7/executive-insight-dashboard.git
 
 2. Navegue até o diretório do projeto:
+```bash
 cd executive-insight-dashboard
 
 3. Abra o arquivo index.html no seu navegador preferido.
@@ -103,3 +103,6 @@ git commit -m 'Adiciona NovaFuncionalidade'
 git push origin feature/NovaFuncionalidade
 
 5. Abra um Pull Request
+
+📄 Licença
+Distribuído sob a licença MIT.
