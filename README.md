@@ -1,6 +1,6 @@
 # 📊 Executive Insight Dashboard
 
- <img src="https://raw.githubusercontent.com/PabloG-7/executive-insight-dashboard/refs/heads/main/dashboard-apresentacao.png" width="600" alt="Preview dashboard">
+ <img src="https://raw.githubusercontent.com/PabloG-7/executive-insight-dashboard/refs/heads/main/dashboard-apresentacao.png" alt="Preview dashboard">
 
 Um dashboard executivo moderno e responsivo, projetado para impressionar CEOs e gestores com visualizações de dados claras e impactantes.
 
